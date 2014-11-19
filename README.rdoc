@@ -26,3 +26,30 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+NOTE::::::
+-----------
+If you want to use Rails 4.1.x with Refinery now, install using this template:
+
+rails new app_name -m http://refinerycms.com/t/edge
+this is not working
+
+1) create rails app with 4.1
+bundle install
+Gem file
+gem 'refinerycms', github: 'refinery/refinerycms', branch: 'master'
+gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
+
+# Add support for refinerycms-acts-as-indexed
+gem 'refinerycms-acts-as-indexed', github: 'refinery/refinerycms-acts-as-indexed'
+
+>> rails generate refinery:cms --fresh-installation
+
+Access the refinery by:
+localhost:3000/refinery/users/register
+
+http://refinerycms.com/guides/getting-started
+
+http://localhost:3000/about
+
+customize your page
