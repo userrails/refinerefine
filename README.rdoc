@@ -27,7 +27,7 @@ Things you may want to cover:
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
-NOTE::::::
+NOTE::::::               http://refinerycms.com/guides/getting-started
 -----------
 If you want to use Rails 4.1.x with Refinery now, install using this template:
 
@@ -53,3 +53,8 @@ http://refinerycms.com/guides/getting-started
 http://localhost:3000/about
 
 customize your page
+
+rake refinery:override view=refinery/pages/show
+      create  app/views/refinery/pages/show.html.erb
+
+      
